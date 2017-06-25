@@ -25,21 +25,20 @@ namespace XMLWeather
             currentDayLabel.Text = DateTime.Now.ToString("dddd");
             currentDateLabel.Text = DateTime.Now.ToString("M");
             currentOutput.Text = tempConversion(Form1.days[0].currentTemp);
-            minOutputToday.Text = Form1.days[0].tempLow;
-            maxOutputToday.Text = Form1.days[0].tempHigh;
-            todayPrec.Text = Form1.days[0].condition;
+            minOutputToday.Text = Form1.days[0].tempLow + "°C";
+            maxOutputToday.Text = Form1.days[0].tempHigh + "°C";
 
-            tomorrowDate.Text = DateTime.Now.AddDays(2).DayOfWeek.ToString();
+            tomorrowDate.Text = DateTime.Now.AddDays(1).DayOfWeek.ToString();
             minOutputTomorrow.Text = tempConversion(Form1.days[1].tempLow);
             maxOutputTomorrow.Text = tempConversion(Form1.days[1].tempHigh);
             tomorrowPrec.Text = Form1.days[1].condition;
 
-            thirdDayDate.Text = DateTime.Now.AddDays(3).DayOfWeek.ToString();
+            thirdDayDate.Text = DateTime.Now.AddDays(2).DayOfWeek.ToString();
             minOutputThird.Text = tempConversion(Form1.days[2].tempLow);
             maxOutputThird.Text = tempConversion(Form1.days[2].tempHigh);
             thirdDayPrec.Text = Form1.days[2].condition;
 
-            fourthDayDate.Text = DateTime.Now.AddDays(4).DayOfWeek.ToString();
+            fourthDayDate.Text = DateTime.Now.AddDays(3).DayOfWeek.ToString();
             minOutputForth.Text = tempConversion(Form1.days[3].tempLow);
             maxOutputForth.Text = tempConversion(Form1.days[3].tempHigh);
             fourthDayPrec.Text = Form1.days[3].condition;
@@ -48,7 +47,7 @@ namespace XMLWeather
 
             string group = Form1.days[0].condition;
             int firstNum = Int16.Parse(group.Substring(0, 1));
-            int lastNum = Int16.Parse(Form1.days[0].condition.Substring(2,2));
+            int lastNum = Int16.Parse(Form1.days[0].condition.Substring(2,1));
 
             switch (firstNum)
             {

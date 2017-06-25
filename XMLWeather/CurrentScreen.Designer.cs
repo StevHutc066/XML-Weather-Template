@@ -311,9 +311,9 @@
             // 
             this.tomorrowPrec.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tomorrowPrec.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.tomorrowPrec.Location = new System.Drawing.Point(22, 351);
+            this.tomorrowPrec.Location = new System.Drawing.Point(3, 351);
             this.tomorrowPrec.Name = "tomorrowPrec";
-            this.tomorrowPrec.Size = new System.Drawing.Size(93, 71);
+            this.tomorrowPrec.Size = new System.Drawing.Size(112, 71);
             this.tomorrowPrec.TabIndex = 63;
             this.tomorrowPrec.Text = "Sunny";
             // 
@@ -323,7 +323,7 @@
             this.thirdDayPrec.ForeColor = System.Drawing.Color.DodgerBlue;
             this.thirdDayPrec.Location = new System.Drawing.Point(121, 351);
             this.thirdDayPrec.Name = "thirdDayPrec";
-            this.thirdDayPrec.Size = new System.Drawing.Size(95, 71);
+            this.thirdDayPrec.Size = new System.Drawing.Size(111, 71);
             this.thirdDayPrec.TabIndex = 64;
             this.thirdDayPrec.Text = "Sunny";
             // 
